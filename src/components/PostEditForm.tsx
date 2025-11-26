@@ -35,7 +35,6 @@ const postEditSchema = z.object({
 });
 
 export function PostEditForm({ isOpen, onClose, initialData, setPosts }: PostEditFormProps) {
-    console.log(initialData);
     const {
         register,
         handleSubmit,
