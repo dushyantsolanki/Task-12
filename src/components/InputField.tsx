@@ -13,13 +13,13 @@ export const InputField = ({ label, error, className, ...props }: InputFieldProp
   return (
     <div>
       {label && (
-        <Label htmlFor={props.id} className="mb-2.5 block">
+        <Label htmlFor={props.id} className="mb-2.5 block text-left">
           {label}
         </Label>
       )}
-      <Input {...props} className={cn(error && 'border-red-500 ring-1 ring-red-500', className)} />
+      <Input {...props} className={cn(error && 'border-red-500 ring-1 ring-red-500 ', className)} />
 
-      {error && <p className="mt-1.5 ml-1 text-sm text-red-500">{error}</p>}
+      {error && <p className="mt-1.5 ml-1 text-sm text-left text-red-500">{error}</p>}
     </div>
   );
 };

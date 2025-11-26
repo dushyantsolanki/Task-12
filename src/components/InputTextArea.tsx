@@ -13,7 +13,7 @@ export const InputTextArea = ({ label, error, className, ...props }: InputTextAr
   return (
     <div>
       {label && (
-        <Label htmlFor={props.id} className="mb-2.5 block">
+        <Label htmlFor={props.id} className="mb-2.5 text-left block">
           {label}
         </Label>
       )}
@@ -25,7 +25,7 @@ export const InputTextArea = ({ label, error, className, ...props }: InputTextAr
           className,
         )}
       />
-      {error && <p className="ml-1 mt-1 text-sm text-red-500">{error}</p>}
+      {error && <p className="ml-1 mt-1 text-sm text-left text-red-500">{error}</p>}
     </div>
   );
 };
